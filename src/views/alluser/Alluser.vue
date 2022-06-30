@@ -159,8 +159,9 @@ export default {
     },
     //页码切换
     handleCurrentChange(e) {
-      console.log(e);
-      (this.myUser.page = e), this.getAlldata();
+      console.log(e,111111111);
+      (this.myUser.page = e),
+       this.getAlldata();
     },
     //时间戳转化
     myDate(time) {

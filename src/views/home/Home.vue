@@ -44,6 +44,11 @@
               <span slot="title">数据分析</span>
             </el-menu-item>
 
+            <el-menu-item index="/news">
+              <i class="el-icon-data-analysis"></i>
+              <span slot="title">新方法</span>
+            </el-menu-item>
+
             <!-- <el-submenu index="4">
               <template slot="title">
                 <i class="el-icon-location"></i>

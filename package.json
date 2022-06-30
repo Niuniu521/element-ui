@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -12,8 +12,10 @@
     "core-js": "^3.6.5",
     "echarts": "^5.2.1",
     "element-ui": "^2.15.6",
+    "js-cookie": "^2.2.1",
     "less": "^4.1.1",
     "less-loader": "^4.1.0",
+    "moment": "^2.29.1",
     "nprogress": "^0.2.0",
     "vue": "^2.6.11",
     "vue-router": "^3.5.2"
@@ -39,7 +41,14 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "generator-star-spacing": "off",
+      "no-debugger": "off",
+      "no-tabs": "off",
+      "no-unused-vars": "off",
+      "no-console": "off",
+      "no-irregular-whitespace": "off"
+    }
   },
   "browserslist": [
     "> 1%",

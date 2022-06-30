@@ -6,6 +6,7 @@ import Welcome from "../views/welcome/Welcome.vue";
 import Alluser from "../views/alluser/Alluser.vue";
 import Adduser from "../views/adduser/Adduser.vue";
 import Datauser from "../views/datauser/Datauser.vue"
+import News from "../views/news/index.vue"
 
 
 Vue.use(VueRouter)
@@ -39,7 +40,11 @@ const routes=[
       {
         path:"/data",
         component:Datauser
-      }
+      },
+      {
+        path:"/news",
+        component:News
+      },
     ]
   }
 ]

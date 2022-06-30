@@ -38,7 +38,7 @@ export function addUser(myObj){
     params:myObj
   })
 }
-
+//验证数据库中是否已经存在该用户，其中主要验证，电话、微信、QQ。
 export function ValidataFun(myObj){
   return request({
     url:"/yxValidate.php",
@@ -94,5 +94,29 @@ export function kfdata(val){
 export function zongdata(){
   return request({
     url:"/dataZong.php"
+  })
+}
+
+
+
+
+
+// 查询列表
+export function listData(config) {
+  return request({
+    url:"/yxList.php",
+    params:config
+  }).then(res => {
+    console.log(res);
+    let data = {
+      records: [],
+      total: 0
+    };
+    if (res.status === 200) {
+      data = res.data;
+    }
+    console.log(data);
+    return data;
+
   })
 }

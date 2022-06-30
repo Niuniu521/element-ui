@@ -163,6 +163,7 @@ methods:{
   //提交修改
   onUpdate(){
      this.$refs["adduserForm"].validate(valid=>{
+       console.log(this.adduserForm);
        if(valid){
          upDAta(this.adduserForm).then(()=>{
             this.$message.success("更新成功"),
